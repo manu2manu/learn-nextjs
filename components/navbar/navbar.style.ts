@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { theme } from "../../styles/globalStyle";
 import { HorizontalCenter } from "../../styles/layout";
 
 export type ScrollProps = {
@@ -20,10 +19,12 @@ export const NavbarContainer = styled.div < ScrollProps > `
   max-width: 100vw;
   position: fixed;
   width: 100%;
+  height: 60px;
   z-index: 4;
-  padding: 0 37px;
-  justify-content: space-between;
-  background: ${({ scrolling }: any) => (scrolling ? theme.colors.bright.aqua : 'transpaarent')};
+  padding: 0 5px;
+  justify-content: space-around;
+  background: ${({ scrolling }: any) => (scrolling ? '#ffffff40' : 'transpaarent')};
+  backdrop-filter: blur(4px);
   margin-top: 0;
   top: 0;
 
@@ -43,3 +44,19 @@ export const NavbarContainer = styled.div < ScrollProps > `
   }
 `;
 
+export const NavLinksWrapper = styled.div`
+  display: none;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+`;
+
+export const ToggleWrapper = styled.span`
+  font-size: 22px;
+  cursor: pointer;
+`
