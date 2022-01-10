@@ -22,7 +22,7 @@ export const NavbarContainer = styled.div < ScrollProps > `
   height: 60px;
   z-index: 4;
   padding: 0 5px;
-  justify-content: space-around;
+  justify-content: space-between;
   background: ${({ scrolling }: any) => (scrolling ? '#ffffff40' : 'transpaarent')};
   backdrop-filter: blur(4px);
   margin-top: 0;
@@ -56,7 +56,17 @@ export const NavLinksWrapper = styled.div`
   }
 `;
 
-export const ToggleWrapper = styled.span`
+export const ToggleWrapper = styled.div`
   font-size: 22px;
   cursor: pointer;
-`
+`;
+
+export const NavbarRightSectionWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-right: 20px;
+
+  @media (min-width: 1024px) {
+    padding-right: 35px;
+  }
+`;
