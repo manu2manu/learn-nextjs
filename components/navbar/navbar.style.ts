@@ -32,8 +32,6 @@ export const NavbarContainer = styled.div < ScrollProps > `
 
   @media (min-width: 1366px) {
     height: ${DesktopNavbarHeight1366};
-    display: flex;
-    align-items: center;
     flex-direction: row;
     top: 0;
     left: 0;
@@ -46,15 +44,26 @@ export const NavbarContainer = styled.div < ScrollProps > `
 
 export const NavLinksWrapper = styled.div`
   display: none;
-  padding: 0;
-  justify-content: space-around;
-  align-items: center;
-  width: auto;
-
   @media (min-width: 1024px) {
     display: flex;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
   }
 `;
+
+export const MenuBtnWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 0 20px;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+`;
+
 
 export const ToggleWrapper = styled.div`
   font-size: 22px;

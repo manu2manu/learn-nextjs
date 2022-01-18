@@ -7,6 +7,7 @@ type Props = {
 function Header({title}: Props) {
   return (
     <Head>
+        <link rel="preload" as="font" href="../fonts/mononoki.Regular.Nerd.Font.ttf" type="font/ttf" crossOrigin="anonymous" />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -20,6 +21,19 @@ function Header({title}: Props) {
         />
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
+        <style>
+          {
+            `
+            @font-face {
+              font-family: MononokiNerdFont;
+              src: url(./fonts/mononoki.Regular.Nerd.Font.ttf);
+            }
+            * {
+              font-family: MononokiNerdFont;
+            }
+            `
+          }
+        </style>
       </Head>
   )
 }

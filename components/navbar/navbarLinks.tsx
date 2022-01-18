@@ -5,7 +5,7 @@ function NavbarLinks() {
   return (
     <NavLinksWrapper>
       <MenuItemLink href="/blog" key="blog">Blog</MenuItemLink>
-      <MenuItemLink href="/blog" key="news">News</MenuItemLink>
+      <MenuItemLink href="/news" key="news">News</MenuItemLink>
     </NavLinksWrapper>
   );
 }

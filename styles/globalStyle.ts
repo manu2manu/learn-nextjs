@@ -89,12 +89,7 @@ export const theme: ThemeType = {
 };
 
  export const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: MononokiNerdFont;
-    src: url(./fonts/mononoki.Regular.Nerd.Font.ttf);
-  }
   body {
-    font-family: MononokiNerdFont;
     margin: 0;
     padding: 0;
     background: ${({theme}: any ) => theme.bodyBg}; 

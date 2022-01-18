@@ -6,3 +6,7 @@ export const HorizontalCenter = css`
   align-items: center;
 `;
 
+export const VerticalCenter = css`
+  ${HorizontalCenter};
+  flex-direction: column;
+`;
