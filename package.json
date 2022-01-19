@@ -1,15 +1,28 @@
 {
   "name": "manu-blog",
   "private": true,
+  "keywords": [
+    "manu",
+    "blog",
+    "dev",
+    "javascript",
+    "typescript",
+    "react",
+    "nodejs",
+    "linux"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "git diff --diff-filter=d --name-only HEAD | grep -E '(\\.tsx?|\\.json)$' | xargs eslint --fix -c .eslintrc.js",
+    "format": "git diff --diff-filter=d --name-only HEAD | grep -E '(\\.tsx?|\\.json)$' | xargs prettier --write ",
+    "precheck": "yarn format && yarn lint",
+    "commit": "yarn precheck && git add . && git-cz"
   },
   "config": {
     "commitizen": {
-        "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "dependencies": {
@@ -26,10 +39,21 @@
     "@types/node": "17.0.8",
     "@types/react": "17.0.38",
     "@types/styled-components": "^5.1.19",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
     "babel-plugin-styled-components": "^2.0.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "8.6.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^16.1.0",
     "eslint-config-next": "12.0.7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.1",
     "typescript": "4.5.4"
   }
 }
