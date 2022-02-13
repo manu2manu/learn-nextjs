@@ -1,8 +1,8 @@
-import { createContext, useState } from "react";
-import { BaseProps } from "../../types";
+import { createContext, useState } from 'react';
+import { BaseProps } from '../../types';
 
 const defaultState = {
-  dark: false,
+  dark: true
 };
 
 interface IThemeContext {
@@ -21,7 +21,7 @@ export const ThemeProviderContext = ({ children }: BaseProps) => {
     <ThemeContextP.Provider
       value={{
         dark,
-        toggleDark,
+        toggleDark
       }}
     >
       {children}

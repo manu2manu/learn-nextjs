@@ -34,21 +34,28 @@ type ThemeType = {
     fg2: string;
     normal: ColorNormalType;
     bright: ColorBrightType;
-  } 
+  };
 };
 
 export const lightTheme: DefaultTheme = {
   bodyBg: '#fbf1c7',
   text: '#282828',
   colors: {
-
+    orange208: '#fe8019',
+    orange: '#d05d3c',
+    gray: '#7c6f64'
   }
 };
 
 export const darkTheme: DefaultTheme = {
   bodyBg: '#3c3836',
-  text: '#fff'
-}
+  text: '#fff',
+  colors: {
+    orange208: '#fe8019',
+    orange: '#d05d3c',
+    gray: '#7c6f64'
+  }
+};
 
 // Based on Gruvbox palette
 export const theme: ThemeType = {
@@ -88,11 +95,11 @@ export const theme: ThemeType = {
   }
 };
 
- export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: ${({theme}: any ) => theme.bodyBg}; 
-    color: ${({theme}: any) => theme.text};
+    background: ${({ theme }: any) => theme.bodyBg}; 
+    color: ${({ theme }: any) => theme.text};
   }
 `;
