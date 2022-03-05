@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { HorizontalCenter } from "../../styles/layout";
+import styled, { css } from 'styled-components';
+import { HorizontalCenter } from '../../styles/layout';
 
 export type ScrollProps = {
   scrolling: boolean | number;
@@ -10,11 +10,11 @@ export type ScrollProps = {
 const OnScrolling = css`
   box-shadow: 0 0 4px 0 #071d28;
   transition: down 4.3s;
-`
+`;
 
 export const DesktopNavbarHeight1366 = '82px';
 
-export const NavbarContainer = styled.div < ScrollProps > `
+export const NavbarContainer = styled.div<ScrollProps>`
   ${HorizontalCenter};
   max-width: 100vw;
   position: fixed;
@@ -23,7 +23,7 @@ export const NavbarContainer = styled.div < ScrollProps > `
   z-index: 4;
   padding: 0 5px;
   justify-content: space-between;
-  background: ${({ scrolling }: any) => (scrolling ? '#ffffff40' : 'transpaarent')};
+  background: ${({ scrolling }: any) => (scrolling ? '#ffffff40' : 'transparent')};
   backdrop-filter: blur(4px);
   margin-top: 0;
   top: 0;
@@ -64,10 +64,10 @@ export const MenuBtnWrapper = styled.div`
   }
 `;
 
-
 export const ToggleWrapper = styled.div`
   font-size: 22px;
   cursor: pointer;
+  color: ${({ scrolling, theme }: any) => (scrolling ? theme.colorNavBarScroll : theme.text)};
 `;
 
 export const NavbarRightSectionWrapper = styled.div`

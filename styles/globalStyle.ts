@@ -40,7 +40,13 @@ type ThemeType = {
 export const lightTheme: DefaultTheme = {
   bodyBg: '#fbf1c7',
   text: '#282828',
+  colorNavBar: '#282828',
+  colorNavBarScroll: '#3c3836',
+  colorButton: '#353535',
+  box: '#282828',
+  boxShadow: '#282828',
   colors: {
+    bg1: '#504945',
     orange208: '#fe8019',
     orange: '#d05d3c',
     gray: '#7c6f64'
@@ -49,8 +55,14 @@ export const lightTheme: DefaultTheme = {
 
 export const darkTheme: DefaultTheme = {
   bodyBg: '#3c3836',
-  text: '#fff',
+  text: '#757575',
+  colorNavBar: '#757575',
+  colorNavBarScroll: '#3c3836',
+  colorButton: '#353535',
+  box: '#4a4745',
+  boxShadow: '#282828',
   colors: {
+    bg1: '#504945',
     orange208: '#fe8019',
     orange: '#d05d3c',
     gray: '#7c6f64'

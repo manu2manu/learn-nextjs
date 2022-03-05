@@ -1,8 +1,8 @@
-import { ScreenType, useScreen } from "../../core/hooks/useScreen";
-import useScrolling from "../../core/hooks/useScrolling";
-import LogoNavbar from "./LogoNavbar";
-import { NavbarContainer } from "./navbar.style";
-import NavbarRightSection from "./NavbarRightSection";
+import { ScreenType, useScreen } from '../../core/hooks/useScreen';
+import useScrolling from '../../core/hooks/useScrolling';
+import LogoNavbar from './LogoNavbar';
+import { NavbarContainer } from './navbar.style';
+import NavbarRightSection from './NavbarRightSection';
 
 function NavBar() {
   const size = useScreen();
@@ -10,10 +10,12 @@ function NavBar() {
 
   return (
     <NavbarContainer scrolling={isScrolling ? 1 : 0}>
-      <LogoNavbar href="/">{'<Manu />'}</LogoNavbar>
-      <NavbarRightSection /> 
+      <LogoNavbar scrolling={isScrolling ? 1 : 0} href="/">
+        {'<Manu />'}
+      </LogoNavbar>
+      <NavbarRightSection />
     </NavbarContainer>
   );
 }
 
-export default NavBar; 
+export default NavBar;

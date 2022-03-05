@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import ItemLink from '.';
 
 export const ItemLinkWrapper = styled(ItemLink)`
-  color: ${({ theme }: any) => theme.text};
+  color: ${({ theme }: any) => theme.colorButton};
   text-decoration: none;
   transition: all 0.3s ease 0s;
   background-color: ${({ theme }: any) => theme.colors.orange};

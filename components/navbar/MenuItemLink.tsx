@@ -3,7 +3,7 @@ import { theme } from '../../styles/globalStyle';
 import ItemLink from '../itemLink';
 
 export default styled(ItemLink)`
-  color: ${({ theme }: any) => theme.text};
+  color: ${({ scrolling, theme }: any) => (scrolling ? theme.colorNavBarScroll : theme.text)};
   font-size: 14px;
   line-height: 17px;
   margin: 0 2vw;
@@ -15,7 +15,7 @@ export default styled(ItemLink)`
   &:hover {
     transition: 0.5s;
     border-radius: 3px;
-    color: ${theme.colors.bg4};
+    color: ${({ theme }: any) => theme.colors.bg1};
   }
 
   @media (min-width: 1920px) {

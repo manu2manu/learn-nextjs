@@ -7,6 +7,8 @@ import utilStyles from '../styles/utils.module.css';
 import Date from '../components/date';
 import { IndexContainer } from './index.style';
 import ButtonComponent from '../components/button';
+import Skills from '../components/skills';
+import { CoreQualifications } from '../components/coreQualifications';
 
 const Home: NextPage = ({ allPostsData }: any) => {
   return (
@@ -19,10 +21,13 @@ const Home: NextPage = ({ allPostsData }: any) => {
         <IndexContainer>
           <span>Hello. I am Manu.</span>
           <p>
-            I'm a Developer FE with more than 9 years of experience in high-impact environments with very good results.
+            I'm a Developer Front-End with more than 9 years of experience in high-impact environments with very good
+            results.
           </p>
           <ButtonComponent href="/about" text="More about me" />
         </IndexContainer>
+        <Skills />
+        {/* <CoreQualifications /> */}
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>
           <ul className={utilStyles.list}>
