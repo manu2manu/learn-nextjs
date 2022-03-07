@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ToolboxWrapper = styled.div`
-  border: ${({ theme }: any) => `1px solid ${theme.box}`};
   border-radius: 0.56em;
   transition: box-shadow 0.2s ease, border 0.2s ease;
   width: 12rem;
@@ -10,22 +9,23 @@ export const ToolboxWrapper = styled.div`
   box-shadow: ${({ theme }: any) => `0 0 35px 0 ${theme.boxShadow}`};
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
+  margin: 20px;
 
   &:hover {
     transition: box-shadow 0.2s ease;
   }
 `;
 
-export const SkillWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 50px;
+export const BoxIcon = styled.span`
+  font-size: 2.2em;
+  margin: 17px 0;
 `;
 
-export const Icon = styled.span`
-  font-size: 4em;
+export const Boxtext = styled.span`
+  font-weight: bold;
+  margin: 15px;
 `;

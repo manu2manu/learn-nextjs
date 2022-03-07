@@ -1,3 +1,4 @@
+import { Tooltip } from '../tooltip';
 import { Icon, SkillWrapper } from './index.style';
 
 type Props = {
@@ -7,8 +8,10 @@ type Props = {
 
 export function Skill({ icon, title }: Props) {
   return (
-    <SkillWrapper>
-      <Icon>{icon}</Icon>
-    </SkillWrapper>
+    <Tooltip text={title}>
+      <SkillWrapper>
+        <Icon>{icon}</Icon>
+      </SkillWrapper>
+    </Tooltip>
   );
 }

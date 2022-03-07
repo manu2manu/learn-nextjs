@@ -27,7 +27,7 @@ const Home: NextPage = ({ allPostsData }: any) => {
           <ButtonComponent href="/about" text="More about me" />
         </IndexContainer>
         <Skills />
-        {/* <CoreQualifications /> */}
+        <CoreQualifications />
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>
           <ul className={utilStyles.list}>

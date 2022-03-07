@@ -1,12 +1,16 @@
-import { SectionsCommon } from "../commons/sections";
-import Toolbox from "../skills/toolbox";
+import { SectionsCommon } from '../commons/sections';
+import { SectionsItems } from '../commons/sections/index.style';
+import Toolbox from './toolbox';
+import { qualifications } from './utils';
 
 export function CoreQualifications() {
-  return  (
+  return (
     <SectionsCommon title="Core Qualifications">
-      <Toolbox>
-        <span>Ability to acquire new technologies</span>
-      </Toolbox>
+      <SectionsItems>
+        {qualifications.map(([icon, text], key: number) => (
+          <Toolbox {...{ key, icon, text }} />
+        ))}
+      </SectionsItems>
     </SectionsCommon>
-  )
+  );
 }
