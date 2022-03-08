@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import ItemLink from '.';
 
-export const ItemLinkWrapper = styled(ItemLink)`
+export const ItemLinkBouttonWrapper = styled(ItemLink)`
   color: ${({ theme }: any) => theme.colorButton};
   text-decoration: none;
   transition: all 0.3s ease 0s;
@@ -21,6 +21,25 @@ export const ItemLinkWrapper = styled(ItemLink)`
   @media (min-width: 768px) {
     font-size: 1.22em;
     width: 9.9em;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 18px;
+  }
+`;
+
+export const ItemLinkWrapper = styled(ItemLink)`
+  color: ${({ theme }: any) => theme.text};
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  font-size: 1.145em;
+
+  @media (min-width: 768px) {
+    font-size: 1.22em;
   }
 
   @media (min-width: 768px) {

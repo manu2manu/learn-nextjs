@@ -1,6 +1,6 @@
 import { SectionsCommon } from '../commons/sections';
 import { SectionsItems } from '../commons/sections/index.style';
-import Toolbox from './toolbox';
+import Toolbox from '../commons/toolbox';
 import { qualifications } from './utils';
 
 export function CoreQualifications() {
