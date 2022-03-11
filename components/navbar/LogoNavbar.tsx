@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { theme } from '../../styles/globalStyle';
 
 const LogoNavbar = ({ as, children, className, href }: any) => (
   <Link {...{ href, as }} passHref>

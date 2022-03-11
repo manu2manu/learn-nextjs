@@ -59,6 +59,8 @@ export const MenuBtnWrapper = styled.div`
   cursor: pointer;
   font-size: 25px;
   margin: 0 20px;
+  color: ${({ isScrolling, theme }: any) => (isScrolling ? theme.colorNavBarScroll : theme.text)};
+
   @media (min-width: 1024px) {
     display: none;
   }

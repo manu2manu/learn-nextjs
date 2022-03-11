@@ -1,5 +1,15 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import ItemLink from '.';
+
+const MinWidthLinks = css`
+  @media (min-width: 768px) {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 18px;
+  }
+`;
 
 export const ItemLinkBouttonWrapper = styled(ItemLink)`
   color: ${({ theme }: any) => theme.colorButton};
@@ -22,17 +32,10 @@ export const ItemLinkBouttonWrapper = styled(ItemLink)`
     font-size: 1.22em;
     width: 9.9em;
   }
-
-  @media (min-width: 768px) {
-    font-size: 1.5em;
-  }
-
-  @media (min-width: 1920px) {
-    font-size: 18px;
-  }
+  ${MinWidthLinks};
 `;
 
-export const ItemLinkWrapper = styled(ItemLink)`
+const LinkStyle = css`
   color: ${({ theme }: any) => theme.text};
   text-decoration: none;
   transition: all 0.3s ease 0s;
@@ -42,11 +45,13 @@ export const ItemLinkWrapper = styled(ItemLink)`
     font-size: 1.22em;
   }
 
-  @media (min-width: 768px) {
-    font-size: 1.5em;
-  }
+  ${MinWidthLinks};
+`;
 
-  @media (min-width: 1920px) {
-    font-size: 18px;
-  }
+export const ItemExternalLink = styled.a`
+  ${LinkStyle};
+`;
+
+export const ItemLinkWrapper = styled(ItemLink)`
+  ${LinkStyle};
 `;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { theme } from '../../styles/globalStyle';
 import ItemLink from '../itemLink';
 
 export default styled(ItemLink)`
