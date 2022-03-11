@@ -54,7 +54,8 @@ export const lightTheme: DefaultTheme = {
 
 export const darkTheme: DefaultTheme = {
   bodyBg: '#3c3836',
-  text: '#757575',
+  // text: '#757575',
+  text: '#d0d0d3',
   colorNavBar: '#757575',
   colorNavBarScroll: '#3c3836',
   colorButton: '#353535',

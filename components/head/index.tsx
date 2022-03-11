@@ -1,42 +1,43 @@
-import Head from "next/head"
+import Head from 'next/head';
 
 type Props = {
   title: string;
 };
 
-function Header({title}: Props) {
+function Header({ title }: Props) {
   return (
     <Head>
-        <link rel="preload" as="font" href="../fonts/mononoki.Regular.Nerd.Font.ttf" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            title
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={title} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <style>
-          {
-            `
+      <link
+        rel="preload"
+        as="font"
+        href="../fonts/mononoki.Regular.Nerd.Font.ttf"
+        type="font/ttf"
+        crossOrigin="anonymous"
+      />
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="description" content="Learn how to build a personal website using Next.js" />
+      <meta
+        property="og:image"
+        content={`https://og-image.vercel.app/${encodeURI(
+          title
+        )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+      />
+      <meta name="og:title" content={title} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <style>
+        {`
             @font-face {
               font-family: MononokiNerdFont;
               src: url(./fonts/mononoki.Regular.Nerd.Font.ttf);
+              font-display: swap;
             }
             * {
               font-family: MononokiNerdFont;
             }
-            `
-          }
-        </style>
-      </Head>
-  )
+            `}
+      </style>
+    </Head>
+  );
 }
 
 export default Header;
-
