@@ -66,7 +66,7 @@ export const MenuBtnWrapper = styled.div`
   }
 `;
 
-export const ToggleWrapper = styled.div`
+export const ToggleWrapper = styled.div<any>`
   font-size: 22px;
   cursor: pointer;
   color: ${({ scrolling, theme }: any) => (scrolling ? theme.colorNavBarScroll : theme.text)};
