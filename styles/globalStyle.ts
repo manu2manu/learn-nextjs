@@ -40,7 +40,7 @@ export const lightTheme: DefaultTheme = {
   text: '#282828',
   colorNavBar: '#282828',
   colorNavBarScroll: '#3c3836',
-  colorButton: '#353535',
+  colorButton: '#161616',
   box: '#282828',
   boxShadow: '#282828',
   tooltip: '#282828',
@@ -54,11 +54,10 @@ export const lightTheme: DefaultTheme = {
 
 export const darkTheme: DefaultTheme = {
   bodyBg: '#3c3836',
-  // text: '#757575',
   text: '#d0d0d3',
   colorNavBar: '#757575',
   colorNavBarScroll: '#3c3836',
-  colorButton: '#353535',
+  colorButton: '#161616',
   box: '#4a4745',
   boxShadow: '#282828',
   tooltip: '#757575',

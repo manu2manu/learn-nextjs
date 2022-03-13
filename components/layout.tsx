@@ -17,7 +17,7 @@ export default function Layout({ children }: Props) {
   const { isOpen, onChange } = useContext(DrawerContextProvider);
   return (
     <>
-      <Header title={siteTitle} />
+      <Header />
       <NavBar />
       <Container>
         <main>{children}</main>
