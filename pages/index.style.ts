@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const IndexContainer = styled.div`
+const IndexContainer = styled.div`
   padding-top: 20vh;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,8 @@ export const IndexContainer = styled.div`
     }
   }
 `;
+
+export default IndexContainer;
 
 export const HomeBgWrapper = styled.div`
   width: 100%;

@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import { IndexContainer } from './index.style';
 import ButtonComponent from '../components/button';
 import Skills from '../components/skills';
 import { CoreQualifications } from '../components/coreQualifications';
 import { Projects } from '../components/projects';
+import IndexContainer from './index.style';
 
 const Home: NextPage = () => {
   return (

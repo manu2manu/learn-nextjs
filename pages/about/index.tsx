@@ -1,5 +1,5 @@
 import Layout from '../../components/layout';
-import { Intro, MyName } from './index.style';
+import Intro, { MyName } from './index.style';
 
 type ContactProps = {
   title: string;

@@ -1,9 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Intro = styled.div`
+const Intro = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export default Intro;
 
 export const MyName = styled.span`
   font-size: 1.38em;
