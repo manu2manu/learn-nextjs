@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ToolboxWrapper = styled.div`
   border-radius: 0.56em;
   transition: box-shadow 0.2s ease, border 0.2s ease;
-  width: ${({width}: any) => width ? width : 12}rem;
-  height: ${({width}: any) => width ? width : 12}rem;
+  width: ${({ width }: any) => (width ? width : 12)}rem;
+  height: ${({ width }: any) => (width ? width : 12)}rem;
   background-color: ${({ theme }: any) => theme.bodyBg};
   box-shadow: ${({ theme }: any) => `0 0 35px 0 ${theme.boxShadow}`};
 
@@ -32,8 +32,8 @@ export const Boxtext = styled.span`
 `;
 
 export const CornerRight = styled.div`
-    position: absolute;
-    right: 18px;
-    bottom: 10px;
-  font-size: 1.5em;
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  font-size: 1.8em;
 `;

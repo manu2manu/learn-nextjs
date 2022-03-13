@@ -1,5 +1,5 @@
 import Layout from '../../components/layout';
-import Intro, { MyName } from './index.style';
+import Intro, { Contact, MyName, Paragraph } from './index.style';
 
 type ContactProps = {
   title: string;
@@ -8,9 +8,9 @@ type ContactProps = {
 
 function ContactWrapper({ title, value }: ContactProps) {
   return (
-    <span>
+    <Contact>
       <strong>{title}:</strong> {value}
-    </span>
+    </Contact>
   );
 }
 
@@ -21,22 +21,24 @@ export default function AboutMe() {
         <MyName>Hello. I am Manu.</MyName>
         <h3>Javascript Developer</h3>
         <ContactWrapper title="email" value="manujsdev@gmail.com" />
-        <ContactWrapper title="phone" value="+53 58180301" />
+        <ContactWrapper title="twitter" value="@manujsdev" />
       </Intro>
 
-      <p>
+      <Paragraph>
         I am a developer who graduated from Software engineering with more than 9 years of experience in high-impact
         environments with very good results. I'm ready for software management and development.{' '}
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         I have experience in web application development and database administration in distributions based on Debian
         and its respective administrations.
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         I consider myself very passionate, responsible, organized and creative. I have ease of communication and I
         believe in teamwork.
-      </p>
-      <p>I have a high willingness to continue my professional development and I definitely like new challenges.</p>
+      </Paragraph>
+      <Paragraph>
+        I have a high willingness to continue my professional development and I definitely like new challenges.
+      </Paragraph>
     </Layout>
   );
 }
