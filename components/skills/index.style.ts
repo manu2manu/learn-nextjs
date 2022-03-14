@@ -9,4 +9,8 @@ export const SkillWrapper = styled.div`
 
 export const Icon = styled.span`
   font-size: 4em;
+  &:hover {
+    color: ${({ color }: any) => (color ? color : '#1569c4')};
+    transition: 0.3s;
+  }
 `;

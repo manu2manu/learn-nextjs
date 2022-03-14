@@ -7,8 +7,8 @@ export default function Skills() {
   return (
     <SectionsCommon title="Professional Skills">
       <SectionsItems>
-        {skills.map(([icon, title], key: number) => (
-          <Skill {...{ key, icon, title }} />
+        {skills.map(([icon, title, color], key: number) => (
+          <Skill {...{ key, icon, title, color }} />
         ))}
       </SectionsItems>
     </SectionsCommon>
