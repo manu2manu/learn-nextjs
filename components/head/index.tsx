@@ -11,12 +11,15 @@ function Header() {
         crossOrigin="anonymous"
       />
       <link rel="icon" href="/favicon.ico" />
-      <meta name="description" content="Manu's website" />
-      <meta property="og:title" content="Manu's Portfolio" />
-      <meta property="og:description" content="Manu's website" />
-      <meta property="og:url" content="https://manus.portfolio.app" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="manujsdev's portfolio: this is my postfolio. I show you who I am" />
+      <meta property="og:title" content="manujsdev's portfolio" />
+      <meta property="og:description" content="manujsdev's portfolio: this is my portfolio. I show you who I am" />
+      <meta property="og:url" content="https://manujsdev.vercel.app/" />
       <meta property="og:type" content="website" />
+      <meta name="robots" content="index, follow" />
       <meta name="twitter:card" content="summary_large_image" />
+      <title>manujsdev's portfolio</title>
       <style>
         {`
             @font-face {

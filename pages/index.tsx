@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../components/layout';
 import ButtonComponent from '../components/button';
 import Skills from '../components/skills';
 import { CoreQualifications } from '../components/coreQualifications';
@@ -12,9 +11,6 @@ const Home: NextPage = () => {
     <>
       {/* <HomeBgWrapper /> */}
       <Layout home>
-        <Head>
-          <title>{siteTitle}</title>
-        </Head>
         <IndexContainer>
           <span>Hello. I am Manu.</span>
           <p>
