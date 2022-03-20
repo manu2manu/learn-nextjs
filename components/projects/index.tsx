@@ -3,6 +3,8 @@ import { SectionsItems } from '../commons/sections/index.style';
 import Toolbox from '../commons/toolbox';
 import { ExtraWrapper } from './index.style';
 
+// icon's names
+// 01. nf-mdi-library
 const projects = [
   [
     '',

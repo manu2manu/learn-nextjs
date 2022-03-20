@@ -1,3 +1,26 @@
+/**
+ * icon's names
+ * 01. nf-dev-html5
+ * 02. nf-dev-css3
+ * 03. nf-mdi-language_javascript
+ * 04. nf-mdi-language_typescript
+ * 05. nf-dev-sass
+ * 06. nf-dev-less
+ * 07. nf-mdi-material_ui
+ * 08. nf-dev-react
+ * 09. nf-dev-angular
+ * 10. nf-dev-nodejs_small
+ * 11. nf-dev-mongodb
+ * 12. nf-dev-mysql
+ * 13. nf-dev-postgresql
+ * 14. nf-dev-git
+ * 15. nf-dev-github_badge
+ * 16. nf-fa-gitlab
+ * 17. nf-dev-vim
+ * 18. nf-dev-visualstudio
+ * 19. nf-mdi-jira
+ * 20. nf-dev-trello
+ */
 export const skills = [
   ['', 'HTML 5', '#d75923'],
   ['', 'CSS', '#2449d8'],
