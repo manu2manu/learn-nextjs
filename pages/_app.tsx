@@ -8,7 +8,6 @@ import { ThemeProviderStyled } from '../components/contexts/ThemeProviderStyled'
 import { pageview } from '../lib/ga';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  console.log('env: ', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
   const router = useRouter();
 
   useEffect(() => {
