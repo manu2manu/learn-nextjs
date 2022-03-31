@@ -16,9 +16,9 @@ function ContactWrapper({ title, value }: ContactProps) {
 
 export default function AboutMe() {
   return (
-    <Layout>
+    <Layout title="About me">
       <Intro>
-        <MyName>Hello. I am Manu.</MyName>
+        <MyName>Hello. I'm Manu.</MyName>
         <h3>Javascript Developer</h3>
         <ContactWrapper title="email" value="manujsdev@gmail.com" />
         <ContactWrapper title="twitter" value="@manujsdev" />

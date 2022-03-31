@@ -8,16 +8,14 @@ import { Footer } from './footer';
 
 type Props = {
   children: ReactNode;
-  home?: boolean;
+  title?: string;
 };
 
-export const siteTitle = 'Manu`s website';
-
-export default function Layout({ children }: Props) {
+export default function Layout({ children, title }: Props) {
   const { isOpen, onChange } = useContext(DrawerContextProvider);
   return (
     <>
-      <Header />
+      <Header {...{ title }} />
       <NavBar />
       <Container>
         <main>{children}</main>

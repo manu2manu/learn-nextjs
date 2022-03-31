@@ -1,6 +1,10 @@
 import Head from 'next/head';
 
-function Header() {
+type Props = {
+  title?: string;
+};
+
+function Header({ title = 'manujsdev`s portfolio' }: Props) {
   return (
     <Head>
       <link rel="preload" as="font" href="../fonts/mononoki.icons.min.ttf" type="font/ttf" crossOrigin="anonymous" />
@@ -14,7 +18,7 @@ function Header() {
       <meta property="og:type" content="website" />
       <meta name="robots" content="index, follow" />
       <meta name="twitter:card" content="summary_large_image" />
-      <title>manujsdev's portfolio</title>
+      <title>{title}</title>
       <style>
         {`
             @font-face {

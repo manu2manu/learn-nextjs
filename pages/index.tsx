@@ -10,9 +10,9 @@ const Home: NextPage = () => {
   return (
     <>
       {/* <HomeBgWrapper /> */}
-      <Layout home>
+      <Layout>
         <IndexContainer>
-          <span>Hello. I am Manu.</span>
+          <span>Hello. I'm Manu.</span>
           <p>
             I'm a Developer Front-End with more than 9 years of experience in high-impact environments with very good
             results.
